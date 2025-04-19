@@ -629,7 +629,7 @@ namespace SAPIForVOICEVOX
             try
             {
                 //audio_queryを送る
-                string url = $"http://127.0.0.1:{Port}/";
+                string url = $"http://172.25.10.2:{Port}/";
                 using (var resultAudioQuery = await httpClient.PostAsync($"{url}audio_query?{encodedParamaters}", null))
                 {
                     //戻り値を文字列にする
